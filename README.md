@@ -16,9 +16,3 @@ This Python script allows you to scan for open ports on a target host within a s
 
 - Python 3.x
 
-## Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/python-port-scanner.git
