@@ -16,3 +16,10 @@ This Python script allows you to scan for open ports on a target host within a s
 
 - Python 3.x
 
+## How to use?
+
+- Clone the repository
+- Go to the repository using any terminal
+- Use the command python3 app.py
+- Go to localhost on port 5000
+- Enjoyy
