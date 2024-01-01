@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Port Scanner</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+    
+<body>
+    <h1>Port Scanner</h1>
+    <form action="/scan" method="post">
+        <label for="target_host">Target Host:</label>
+        <input type="text" name="target_host" required><br>
+
+        <label for="start_port">Starting Port:</label>
+        <input type="number" name="start_port" required><br>
+
+        <label for="end_port">Ending Port:</label>
+        <input type="number" name="end_port" required><br>
+
+        <input type="submit" value="Scan Ports">
+    </form>
+</body>
+</html>
