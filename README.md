@@ -1,4 +1,4 @@
-# SimplePortScanner
+
 # Python Port Scanner
 
 A simple port scanner written in Python using the socket module.
