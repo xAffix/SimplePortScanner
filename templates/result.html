@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scan Result</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='result-style.css') }}">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="report-box">
+                <div class="report-header">Port Scan Report</div>
+                <div class="result-message">{{ result_message }}</div>
+                
+                {% if open_ports %}
+                    <div class="open-ports">Open Ports:</div>
+                    <ul class="port-list">
+                        {% for port in open_ports %}
+                            <li class="port-item">Port {{ port }} is open</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+    
+                <a class="back-to-home" href="/">Back to Home</a>
+            </div>
+        </div>
+    </body>
+</html>
